@@ -1,0 +1,21 @@
+.nav {
+  padding: 20px 10px 50px;
+  height: fit-content;
+  grid-area: nav;
+  background-color: #fff;
+  box-shadow: 0 5px 15px 5px #eee;
+}
+
+.item {
+}
+
+.item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.item a {
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+}
