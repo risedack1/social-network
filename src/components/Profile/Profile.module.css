@@ -1,0 +1,51 @@
+.content {
+  grid-area: content;
+}
+
+.cover {
+  position: relative;
+  margin-bottom: 30px;
+  height: 200px;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.avatar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  border: 5px solid #d55845;
+  display: block;
+  width: 180px;
+  height: 180px;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.about {
+  margin-bottom: 30px;
+  padding: 20px 0 10px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px 5px #eee;
+}
+
+.name {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.list {
+  padding-left: 10px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 5px;
+}

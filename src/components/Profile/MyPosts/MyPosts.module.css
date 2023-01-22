@@ -1,0 +1,45 @@
+.posts {
+  margin-bottom: 30px;
+  padding: 20px 0 10px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px 5px #eee;
+}
+
+.title {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.input {
+  width: 100%;
+  height: 70px;
+  resize: none;
+  border: 2px solid #e0e0e0;
+}
+
+.inputWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 5px 15px;
+  margin-left: auto;
+  display: block;
+  width: fit-content;
+  border: none;
+  background-color: #d55845;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.postsList {
+  padding-left: 10px;
+}
+
+.postsItem:not(:last-child) {
+  margin-bottom: 10px;
+}

@@ -1,3 +1,4 @@
+import MyPosts from './MyPosts/MyPosts';
 import classes from './Profile.module.css';
 
 const Profile = () => {
@@ -28,30 +29,7 @@ const Profile = () => {
                     </ul>
                 </div>
             </div>
-            <div className={classes.posts}>
-                <h2 className={classes.title}>
-                    New Posts
-                </h2>
-                <div className={classes.inputWrapper}>
-                    <textarea className={classes.input}></textarea>
-                    <button className={classes.button}>
-                        Send
-                    </button>
-                </div>
-                <h2 className={classes.title}>
-                    My posts
-                </h2>
-                <ul className={classes.postsList}>
-                    <li className={classes.postsItem}>
-                        <div className={classes.post}>
-                            <img src="https://imagej.nih.gov/ij/images/baboon.jpg" alt="img" />
-                            <div className={classes.postText}>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque architecto dolore nisi, vel, porro excepturi fugit repellendus saepe quo quas aliquid! Fugiat porro iste architecto! Corporis repudiandae nobis eius iusto.
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <MyPosts />
         </div>
     )
 };
