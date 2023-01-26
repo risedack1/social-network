@@ -10,7 +10,7 @@ const Post = (props) => {
             </div>
             <ul className={classes.socialBar}>
                 <li className={classes.socialBarItem}>
-                    <button className={classes.socialBarLikes} ariaLabel='Likes count'>
+                    <button className={classes.socialBarLikes} aria-label='Likes count'>
                         {props.likesCount}
                     </button>
                 </li>

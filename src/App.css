@@ -38,3 +38,7 @@ img {
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
 }
+
+.app-wrapper-content {
+  grid-area: content;
+}
