@@ -1,4 +1,4 @@
-import dialogUser from '../../img/dialogUser.png';
+import dialogUser from '../../../img/dialogUser.png';
 
 import classes from './../Dialogs.module.css';
 import { NavLink } from "react-router-dom";
