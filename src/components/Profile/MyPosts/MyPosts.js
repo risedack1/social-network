@@ -2,6 +2,22 @@ import Post from './Post/Post';
 import classes from './MyPosts.module.css';
 
 const MyPosts = () => {
+    const posts = [
+        { message: 'Hi, how are you?', likesCount: 20 },
+        { message: 'This is my first post', likesCount: 50 },
+    ];
+
+    const postsItems = posts.map(p => {
+        return (
+            <li className={classes.postsItem}>
+                <Post
+                    message={p.message}
+                    likesCount={p.likesCount}
+                />
+            </li>
+        )
+    })
+
     return (
         <div className={classes.posts}>
             <h2 className={classes.title}>
@@ -17,18 +33,7 @@ const MyPosts = () => {
                 My posts
             </h2>
             <ul className={classes.postsList}>
-                <li className={classes.postsItem}>
-                    <Post
-                        message='Hi, how are you?'
-                        likesCount='20'
-                    />
-                </li>
-                <li className={classes.postsItem}>
-                    <Post
-                        message='This is my first post'
-                        likesCount='50'
-                    />
-                </li>
+                {postsItems}
             </ul>
         </div>
     );
